@@ -21,7 +21,7 @@ function Users() {
           {users.map((user) => (
             <tr key={user.id}>
               <td>
-                <Link to="#">{user.name}</Link>
+                <Link to={`/admin/users/${user.id}`}>{user.name}</Link>
               </td>
               <td>{user.email}</td>
               <td>{user.status}</td>
