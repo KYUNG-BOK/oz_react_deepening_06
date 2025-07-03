@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { users } from '../../database/mockData';
 
-// 1. user.name을 클릭하면 /admin/users/:id로 이동되어야 합니다.
-
 function Users() {
   return (
     <div>
@@ -21,6 +19,7 @@ function Users() {
           {users.map((user) => (
             <tr key={user.id}>
               <td>
+                {/*// 1. user.name을 클릭하면 /admin/users/:id로 이동되어야 합니다.*/}
                 <Link to={`/admin/users/${user.id}`}>{user.name}</Link>
               </td>
               <td>{user.email}</td>
